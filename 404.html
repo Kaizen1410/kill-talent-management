@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Sidebar Left -->
-    <aside class="h-[712px] px-10 py-[60px] fixed top-0 overflow-y-auto left-0">
+    <aside class="h-[712px] px-10 py-[60px] fixed top-0 overflow-y-auto left-0 z-50">
         <div class="flex flex-wrap flex-col h-full justify-between items-center">
             <img src="./assets/img/icon.png" width="80" alt="">
 
@@ -20,7 +20,7 @@
     </aside>
 
     <!-- Sidebar right -->
-    <aside class="h-[712px] px-10 py-[60px] fixed top-0 overflow-y-auto right-0">
+    <aside class="h-[712px] px-10 py-[60px] fixed top-0 overflow-y-auto right-0 z-50">
         <div class="flex flex-wrap flex-col h-full justify-between items-center">
             <img src="./assets/icons/search.svg" alt="">
 
@@ -33,6 +33,23 @@
     </aside>
 
     <!-- Content -->
+    <div class="w-full h-[817px] px-[60px] py-[180px] backdrop-blur-[42px] flex-col justify-start items-center gap-10 inline-flex">
+        <div class="flex-col justify-start items-center flex">
+            <div class="w-[1246px] text-center text-white text-[261.52px] font-bold font-['Sen']">404</div>
+            <div class="flex-col justify-start items-center gap-6 flex">
+                <div class="w-[1261px] text-center text-white text-5xl font-bold font-['Syne'] tracking-[4.80px]">Oops! Page not found.</div>
+                <div class="flex-col justify-start items-center gap-3 flex">
+                    <div class="w-[672px] text-center text-white text-xl font-normal font-['Syne']">The page you are looking for doesn’t exist or an other error occured.</div>
+                    <div class="justify-center items-start inline-flex">
+                        <div class="text-center text-white text-xl font-bold font-['Syne']">GO BACK</div>
+                        <div class="text-center text-white text-xl font-normal font-['Syne']">, or head over to </div>
+                        <div class="text-center text-white text-xl font-bold font-['Syne']"> HOME</div>
+                        <div class="text-center text-white text-xl font-normal font-['Syne']"> to choose a new direction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="flex flex-wrap justify-center items-start content-start gap-10 py-20">
