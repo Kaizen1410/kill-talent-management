@@ -1,0 +1,16 @@
+{
+  "name": "kill-talent-management",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "daisyui": "^3.7.7",
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
