@@ -1027,18 +1027,6 @@ html {
   position: relative;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -1047,12 +1035,24 @@ html {
   bottom: 25px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .left-8 {
   left: 2rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .right-8 {
   right: 2rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-50 {
@@ -1078,6 +1078,10 @@ html {
 
 .contents {
   display: contents;
+}
+
+.h-\[1px\] {
+  height: 1px;
 }
 
 .h-\[31\.81px\] {
@@ -1110,10 +1114,6 @@ html {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[1px\] {
-  height: 1px;
 }
 
 .h-5 {
@@ -1373,6 +1373,11 @@ html {
   padding-right: 2.5rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-\[60px\] {
   padding-left: 60px;
   padding-right: 60px;
@@ -1391,11 +1396,6 @@ html {
 .py-\[60px\] {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .py-\[124px\] {
@@ -1523,6 +1523,10 @@ html {
   font-size: 28px;
 }
 
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1541,10 +1545,6 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[40px\] {
-  font-size: 40px;
 }
 
 .font-bold {
