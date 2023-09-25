@@ -1052,6 +1052,10 @@ html {
   display: inline-flex;
 }
 
+.contents {
+  display: contents;
+}
+
 .h-\[31\.81px\] {
   height: 31.81px;
 }
