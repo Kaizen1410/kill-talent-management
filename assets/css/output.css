@@ -1019,6 +1019,14 @@ html {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -1029,6 +1037,18 @@ html {
 
 .top-0 {
   top: 0px;
+}
+
+.bottom-\[25px\] {
+  bottom: 25px;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
+.right-8 {
+  right: 2rem;
 }
 
 .z-50 {
@@ -1084,6 +1104,14 @@ html {
   height: 100%;
 }
 
+.h-\[1px\] {
+  height: 1px;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -1126,6 +1154,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .grow {
@@ -1208,6 +1240,11 @@ html {
   overflow-y: auto;
 }
 
+.bg-\[\#CBD5E1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -1235,6 +1272,11 @@ html {
 .py-\[60px\] {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-10 {
@@ -1303,6 +1345,10 @@ html {
   line-height: 1.75rem;
 }
 
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1322,6 +1368,10 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.mix-blend-difference {
+  mix-blend-mode: difference;
 }
 
 .backdrop-blur-\[42px\] {

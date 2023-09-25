@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KILLMGMT</title>
-    <link rel="icon" href="./assets/img/icon.png">
+    <link rel="icon" href="./assets/img/icon.svg">
     <link href="./assets/css/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="relative px-8 h-screen flex justify-center items-center">
+        <video autoplay muted loop class="fixed left-0 top-0 h-screen w-screen">
+            <source src="./assets/video/landing.mp4" type="video/mp4" />
+        </video>
 
+        <a href="./models.html" class="z-50 mix-blend-difference">
+            <img src="./assets/img/icon.svg" width="188px" alt="" onmouseover="this.src='./assets/img/icon-hover.svg';" onmouseout="this.src='./assets/img/icon.svg';">
+        </a>
+
+        <div class="absolute bottom-[25px] left-8 right-8 flex gap-8 items-center">
+            <div class="h-[1px] bg-[#CBD5E1] w-full"></div>
+            <a href="https://www.instagram.com/killmgmt/" class="text-[40px] text-white">@killmgmt</a>
+            <div class="h-[1px] bg-[#CBD5E1] w-full"></div>
+        </div>
+    </div>
 </body>
 </html>
