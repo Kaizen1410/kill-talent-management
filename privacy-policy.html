@@ -15,12 +15,14 @@
     <aside class="h-[712px] px-10 py-[60px] fixed top-0 overflow-y-auto left-0 z-50">
         <div class="flex flex-wrap flex-col h-full justify-between items-center">
             <a href="./">
-                <img src="./assets/img/icon.svg" width="80" alt="" onmouseover="this.src='./assets/img/icon-hover.svg';" onmouseout="this.src='./assets/img/icon.svg';">
+                <img src="./assets/img/icon.svg" width="80" alt=""
+                    onmouseover="this.src='../assets/img/icon-hover.svg';"
+                    onmouseout="this.src='../assets/img/icon.svg';">
             </a>
 
-            <a class="flex flex-col justify-center p-0 text-white w-[13px]" href="./contact.html"
-                style="flex: 1 0 0; word-wrap: break-word;">
-                CONTACT
+            <a class="flex flex-col justify-center text-center uppercase leading-[19px] p-0 text-white w-[13px] font-bold"
+                href="./contact.html" style="flex: 1 0 0; word-wrap: break-word;">
+                Contact
             </a>
         </div>
     </aside>
@@ -31,15 +33,21 @@
             <img src="./assets/icons/search.svg" alt="">
 
             <div class="flex flex-col items-start gap-6">
-                <img src="./assets/icons/instagram.svg" alt="">
-                <img src="./assets/icons/facebook.svg" alt="">
-                <img src="./assets/icons/twitter.svg" alt="">
+                <a href="https://www.instagram.com/killmgmt/" target="_blank">
+                    <img src="./assets/icons/instagram.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/facebook.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/twitter.svg" alt="">
+                </a>
             </div>
         </div>
     </aside>
 
     <!-- Content -->
-    <div class="w-[calc(100vw-320px)] mx-auto">
+    <div class="px-40">
         <div class="px-[60px] pt-[124px] pb-[180px]">
             <h1 class="text-5xl font-bold text-white text-center mb-10">Privacy Policy</h1>
 
@@ -111,10 +119,11 @@
                             or services. Any of the information we collect from you may be used for the following
                             purposes:
                         </p>
-                        <ul>
+                        <ul class="pl-4">
                             <br>
-                            <li class="text-white list-disc list-inside">Send administrative information</li>
-                            <li class="text-white list-disc list-inside">Run and operate the Website and Services</li>
+                            <li class="text-white list-disc list-outside text-sm">Send administrative information</li>
+                            <li class="text-white list-disc list-outside text-sm">Run and operate the Website and
+                                Services</li>
                             <br>
                         </ul>
                         <p class="text-white text-sm">

@@ -1039,6 +1039,10 @@ html {
   top: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .bottom-\[25px\] {
   bottom: 25px;
 }
@@ -1104,12 +1108,72 @@ html {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-\[1px\] {
   height: 1px;
 }
 
-.h-screen {
-  height: 100vh;
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-\[calc\(\)\] {
+  height: calc();
+}
+
+.h-\[calc\(13\)\] {
+  height: calc(13);
+}
+
+.h-\[calc\(13\*\)\] {
+  height: calc(13 * );
+}
+
+.h-\[calc\(13\*1\)\] {
+  height: calc(13 * 1);
+}
+
+.h-\[calc\(13\*13\)\] {
+  height: calc(13 * 13);
+}
+
+.h-\[calc\(\(13\*13\)\)\] {
+  height: calc((13 * 13));
+}
+
+.h-\[calc\(\(13\*13px\)\)\] {
+  height: calc((13 * 13px));
+}
+
+.h-\[calc\(\(13px\*13px\)\)\] {
+  height: calc((13px * 13px));
+}
+
+.h-\[calc\(\(13\*13\)px\)\] {
+  height: calc((13 * 13)px);
+}
+
+.h-\[hypot\(\)\] {
+  height: hypot();
+}
+
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[82px\] {
+  height: 82px;
 }
 
 .w-8 {
@@ -1160,6 +1224,14 @@ html {
   width: 100vw;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-\[1px\] {
+  width: 1px;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -1168,8 +1240,32 @@ html {
   flex-basis: 0px;
 }
 
+.rotate-1 {
+  --tw-rotate: 1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-2 {
+  --tw-rotate: 2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-45 {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .list-inside {
   list-style-position: inside;
+}
+
+.list-outside {
+  list-style-position: outside;
 }
 
 .list-disc {
@@ -1198,6 +1294,10 @@ html {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1240,9 +1340,28 @@ html {
   overflow-y: auto;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-\[\#CBD5E1\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
 .bg-\[\#CBD5E1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-0 {
@@ -1279,6 +1398,21 @@ html {
   padding-right: 2rem;
 }
 
+.py-\[124px\] {
+  padding-top: 124px;
+  padding-bottom: 124px;
+}
+
+.px-52 {
+  padding-left: 13rem;
+  padding-right: 13rem;
+}
+
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1291,12 +1425,76 @@ html {
   padding-top: 156px;
 }
 
+.pt-\[60px\] {
+  padding-top: 60px;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pt-\[124px\] {
+  padding-top: 124px;
+}
+
+.pb-\[\] {
+  padding-bottom: ;
+}
+
+.pb-\[180px\] {
+  padding-bottom: 180px;
+}
+
+.pt-\[100px\] {
+  padding-top: 100px;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-justify {
   text-align: justify;
+}
+
+.indent-1 {
+  text-indent: 0.25rem;
+}
+
+.-indent-6 {
+  text-indent: -1.5rem;
+}
+
+.-indent-5 {
+  text-indent: -1.25rem;
 }
 
 .font-\[\'Sen\'\] {
@@ -1361,6 +1559,10 @@ html {
   text-transform: uppercase;
 }
 
+.leading-\[19px\] {
+  line-height: 19px;
+}
+
 .tracking-\[4\.80px\] {
   letter-spacing: 4.80px;
 }
@@ -1368,6 +1570,10 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .mix-blend-difference {
