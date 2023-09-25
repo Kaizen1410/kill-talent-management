@@ -13,6 +13,6 @@ a {
     text-decoration: none;
 }
 
-body {
+:root {
     background-color: black;
 }
