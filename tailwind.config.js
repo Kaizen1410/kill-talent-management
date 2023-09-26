@@ -29,6 +29,9 @@ module.exports = {
               lineHeight: '150%'
             }
           ],
+        },
+        fontFamily: {
+          'Libre-Baskerville': ['Libre Baskerville']
         }
       },
     },
