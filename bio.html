@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/img/icon.svg">
     <link href="./assets/css/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -15,8 +16,7 @@
     <aside class="h-screen px-10 py-[60px] fixed top-0 overflow-y-auto left-0 z-50">
         <div class="flex flex-wrap flex-col h-full justify-between items-center">
             <a href="./">
-                <img src="./assets/img/icon.svg" width="80" alt=""
-                    onmouseover="this.src='./assets/img/icon-hover.svg';"
+                <img src="./assets/img/icon.svg" width="80" alt="" onmouseover="this.src='./assets/img/icon-hover.svg';"
                     onmouseout="this.src='./assets/img/icon.svg';">
             </a>
 
@@ -30,7 +30,8 @@
                 </span>
             </a>
 
-            <a class="flex flex-col justify-end text-center uppercase text-16 p-0 text-white w-[13px]" href="./portofolio.html" style="flex: 1 0 0; word-wrap: break-word;">
+            <a class="flex flex-col justify-end text-center uppercase text-16 p-0 text-white w-[13px]"
+                href="./portofolio.html" style="flex: 1 0 0; word-wrap: break-word;">
                 <span>Portfolio</span>
             </a>
         </div>
@@ -72,7 +73,8 @@
             </div>
 
             <p class="text-center text-xl leading-[normal] text-white w-[850px]">
-                <b class="font-bold uppercase">ANASTASIA</b> is a 20-year old Italo-Senegalese from a small town near Milano,
+                <b class="font-bold uppercase">ANASTASIA</b> is a 20-year old Italo-Senegalese from a small town near
+                Milano,
                 Italy. She is a Fashion & Communication student with an elevated talent in volleyball. Aicha’s ambitious
                 and determined character is a reflection of her ultra-curious nature. She has a sweet “clumsiness” to
                 her and may at times allow her “touchy” side to submerge. But all in all, Aicha is an extreme
@@ -99,37 +101,27 @@
             </div>
         </div>
     </div>
-    <div class="carousel carousel-center mb-10">
-        <div class="carousel-item">
-            <img src="./assets/img/bio/1carousel.png" alt="" />
-        </div>
-        <div class="carousel-item">
-            <img src="./assets/img/bio/2carousel.png" alt="" />
-        </div>
-        <div class="carousel-item">
-            <img src="./assets/img/bio/3carousel.png" alt="" />
-        </div>
-        <div class="carousel-item">
-            <img src="./assets/img/bio/4carousel.png" alt="" />
-        </div>
-        <div class="carousel-item">
-            <img src="./assets/img/bio/5carousel.png" alt="" />
-        </div>
-        <div class="carousel-item">
-            <img src="./assets/img/bio/1carousel.png" alt="" />
-        </div>
-        <div class="carousel-item">
-            <img src="./assets/img/bio/2carousel.png" alt="" />
-        </div>
-        <div class="carousel-item">
-            <img src="./assets/img/bio/3carousel.png" alt="" />
-        </div>
-        <div class="carousel-item">
-            <img src="./assets/img/bio/4carousel.png" alt="" />
-        </div>
-        <div class="carousel-item">
-            <img src="./assets/img/bio/5carousel.png" alt="" />
-        </div>
+
+    <div class="carousel-bio h-[588px]">
+        <img src="./assets/img/bio/1carousel.png" alt="" />
+        
+        <img src="./assets/img/bio/2carousel.png" alt="" />
+        
+        <img src="./assets/img/bio/3carousel.png" alt="" />
+        
+        <img src="./assets/img/bio/4carousel.png" alt="" />
+
+        <img src="./assets/img/bio/5carousel.png" alt="" />
+
+        <img src="./assets/img/bio/1carousel.png" alt="" />
+
+        <img src="./assets/img/bio/2carousel.png" alt="" />
+
+        <img src="./assets/img/bio/3carousel.png" alt="" />
+
+        <img src="./assets/img/bio/4carousel.png" alt="" />
+
+        <img src="./assets/img/bio/5carousel.png" alt="" />
     </div>
 
     <!-- Footer -->
@@ -137,6 +129,22 @@
         <a href="./privacy-policy.html" class="uppercase text-white text-16">Privacy Policy</a>
         <a href="./terms-and-condition.html" class="uppercase text-white text-16">Terms of Use</a>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel-bio').slick({
+                centerMode: true,
+                arrows: false,
+                slidesToShow: 4,
+                variableWidth: true
+            });
+        });
+    </script>
+
 </body>
 
 </html>
