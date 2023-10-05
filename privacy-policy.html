@@ -12,22 +12,22 @@
 
 <body>
     <!-- Sidebar Left -->
-    <aside class="h-screen px-10 py-[60px] fixed top-0 overflow-y-auto left-0 z-50">
+    <aside class="hidden md:block h-screen px-10 py-[60px] fixed top-0 overflow-y-auto left-0 z-50">
         <div class="flex flex-wrap flex-col h-full justify-between items-center">
             <a href="./">
-                <img src="./assets/img/icon.svg" width="80" alt=""
-                    onmouseover="this.src='./assets/img/icon-hover.svg';"
+                <img src="./assets/img/icon.svg" width="80" alt="" onmouseover="this.src='./assets/img/icon-hover.svg';"
                     onmouseout="this.src='./assets/img/icon.svg';">
             </a>
 
-            <a class="flex flex-col justify-center text-center uppercase text-16 text-white w-[13px]" href="./contact.html" style="flex: 1 0 0; word-wrap: break-word;">
+            <a class="flex flex-col justify-center text-center uppercase text-16 text-white w-[13px]"
+                href="./contact.html" style="flex: 1 0 0; word-wrap: break-word;">
                 <span>Contact</span>
             </a>
         </div>
     </aside>
 
     <!-- Sidebar right -->
-    <aside class="h-screen px-10 py-[60px] fixed top-0 overflow-y-auto right-0 z-50">
+    <aside class="hidden md:block h-screen px-10 py-[60px] fixed top-0 overflow-y-auto right-0 z-50">
         <div class="flex flex-wrap flex-col h-full justify-between items-center w-20">
             <img src="./assets/icons/search.svg" alt="" width="40px" height="40px">
 
@@ -45,9 +45,42 @@
         </div>
     </aside>
 
+    <!-- Navbar -->
+    <nav class="block md:hidden w-full py-10 px-5 md:px-[60px]">
+        <div class="flex justify-between items-center">
+            <a href="./">
+                <img src="./assets/img/icon.svg" width="80" alt="" onmouseover="this.src='./assets/img/icon-hover.svg';"
+                    onmouseout="this.src='./assets/img/icon.svg';">
+            </a>
+            <button class="px-3 text-white text-4xl focus:border border-white rounded-lg"
+                onclick="collapse()">=</button>
+        </div>
+        <div id="navbar-collapse" class="text-white overflow-y-hidden" style="height: 0px;">
+            <ul>
+                <li class="border-b border-white">
+                    <a href="./contact.html" class="block w-full h-full p-3">CONTACT</a>
+                </li>
+                <li class="p-3 border-b border-white">
+                    <input type="search" class="w-full p-2 text-black focus:outline-none rounded" placeholder="Search">
+                </li>
+                <li class="p-3 border-b border-white flex justify-center gap-4">
+                    <a href="https://www.instagram.com/killmgmt/" target="_blank">
+                        <img src="./assets/icons/instagram.svg" alt="" width="20px" height="20px">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icons/facebook.svg" alt="" width="20px" height="20px">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icons/twitter.svg" alt="" width="20px" height="20px">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Content -->
-    <div class="px-40">
-        <div class="px-[60px] pt-[124px] pb-[180px]">
+    <div class="md:px-40">
+        <div class="px-5 md:px-[60px] pt-10 md:pt-[124px] pb-[180px]">
             <h1 class="text-48 font-bold text-white text-center mb-10">Privacy Policy</h1>
 
             <div class="flex flex-col gap-[60px]">
@@ -72,8 +105,8 @@
                     control, or to individuals that we do not employ or manage.
                 </p>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Collection of information</p>
                     </div>
                     <div class="grow basis-0">
@@ -89,8 +122,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Use and processing of collected information</p>
                     </div>
                     <div class="grow basis-0">
@@ -150,8 +183,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Disclosure of information</p>
                     </div>
                     <div class="grow basis-0">
@@ -173,8 +206,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Retention of information</p>
                     </div>
                     <div class="grow basis-0">
@@ -192,8 +225,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Transfer of information</p>
                     </div>
                     <div class="grow basis-0">
@@ -207,8 +240,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Data protection rights under the GDPR</p>
                     </div>
                     <div class="grow basis-0">
@@ -278,8 +311,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">How to exercise your rights</p>
                     </div>
                     <div class="grow basis-0">
@@ -301,8 +334,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Cookies</p>
                     </div>
                     <div class="grow basis-0">
@@ -323,8 +356,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Data analytics</p>
                     </div>
                     <div class="grow basis-0">
@@ -342,8 +375,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Do Not Track signals</p>
                     </div>
                     <div class="grow basis-0">
@@ -363,8 +396,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Email marketing</p>
                     </div>
                     <div class="grow basis-0">
@@ -383,8 +416,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Links to other resources</p>
                     </div>
                     <div class="grow basis-0">
@@ -398,8 +431,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Information security</p>
                     </div>
                     <div class="grow basis-0">
@@ -421,8 +454,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Data breach</p>
                     </div>
                     <div class="grow basis-0">
@@ -440,8 +473,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Changes and amendments</p>
                     </div>
                     <div class="grow basis-0">
@@ -461,8 +494,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Acceptance of this policy</p>
                     </div>
                     <div class="grow basis-0">
@@ -475,8 +508,8 @@
                     </div>
                 </div>
 
-                <div class="flex gap-5">
-                    <div class="w-[360px]">
+                <div class="flex flex-wrap gap-5">
+                    <div class="w-full lg:w-[360px]">
                         <p class="text-white font-bold text-28">Contacting us</p>
                     </div>
                     <div class="grow basis-0">
@@ -506,6 +539,8 @@
         <a href="./privacy-policy.html" class="uppercase text-white text-16">Privacy Policy</a>
         <a href="./terms-and-condition.html" class="uppercase text-white text-16">Terms of Use</a>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
